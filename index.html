@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link class="favicon" rel="icon" href="./assets/logo/favicon.png" />
+  </head>
+  <body class="theme" data-theme="default">
+    <header class="header">
+      <div class="container">
+        <div class="header-row">
+          <div class="header-menu">
+            <ul class="header-menu__items">
+              <li class="menu-item settings">Настройки</li>
+              <li class="menu-item move multi">Против игрока</li>
+              <li class="menu-item move pc">Против компьютера</li>
+              <li class="menu-item move hide-table">Таблица результатов</li>
+              <li class="menu-item move clear">Очистить результаты</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-row">
+          <div class="main-game">
+            <div class="main-game-fields">
+              <div class="main-game__field"></div>
+              <div class="main-game__field"></div>
+              <div class="main-game__field right-modify"></div>
+              <div class="main-game__field"></div>
+              <div class="main-game__field"></div>
+              <div class="main-game__field right-modify"></div>
+              <div class="main-game__field bottom-modify"></div>
+              <div class="main-game__field bottom-modify"></div>
+              <div class="main-game__field right-modify bottom-modify"></div>
+            </div>
+            <div class="main-game-controls">
+              <button class="start" data-language="start">Играть</button>
+              <button class="restart" data-language="restart">Рестарт</button>
+            </div>
+          </div>
+          <div class="main-client-zone">
+            <div class="main-client-row">
+              <div class="main-clien__info">
+                <div class="main-client-item">
+                  <p class="info-title">Информация об игре</p>
+                </div>
+                <div class="main-client-item">
+                  <p class="info">Режим игры:</p>
+                  <p class="info result">Против игрока</p>
+                </div>
+                <div class="main-client-item">
+                  <p class="info">Ходит:</p>
+                  <p class="info result">Игрок Х</p>
+                </div>
+                <div class="main-client-item">
+                  <p class="info">Сделано ходов:</p>
+                  <p class="info result">0</p>
+                </div>
+                <div class="main-client-item">
+                  <p class="info">Победитель / Результат:</p>
+                  <p class="info result">Необходимо сыграть</p>
+                </div>
+              </div>
+              <div class="main-client-table">
+                <div class="title">Результаты</div>
+                <ul class="record-table">
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                  <li class="record-item">Нет игр</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main-other-game">
+            <div class="main-other-game-easter">
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+              <div class="hidden-item">
+                <img
+                  class="hidden"
+                  src="./assets/logo/question.png"
+                  alt="question"
+                />
+              </div>
+            </div>
+            <div class="decor-item">
+              <svg class="decor">
+                <use xlink:href="./assets/logo/clack.svg#clack"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-links">
+            <div class="footer-links__github">
+              <a class="link" href="https://github.com/ligalaz" target="_blank">
+                <svg class="logo">
+                  <use
+                    xlink:href="./assets/logo/icons-github.svg#icons-github"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-create-info">
+            <div class="footer-create__creater">
+              <p data-language="create">Created by Artisom Mikula</p>
+            </div>
+            <div class="footer-create__create-year">
+              <p data-language="city">Minsk <time>2022</time></p>
+            </div>
+          </div>
+          <div class="footer-school-info">
+            <div class="footer-school-info__rsschool">
+              <a class="link" href="https://rs.school/" target="_blank">
+                <svg class="logo">
+                  <use xlink:href="./assets/logo/rs_school.svg#rs_school"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
