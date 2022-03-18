@@ -1,0 +1,357 @@
+/* fonts */
+
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: url(./assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url(./assets/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url(./assets/fonts/Dancing_Script/static/DancingScript-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Page  structure styles */
+
+body {
+  font-family: "IBM Plex Serif";
+  width: 100%;
+  height: 100vh;
+  /*overflow: hidden;*/
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  background: wheat;
+  color: white;
+}
+
+.header,
+.main,
+.footer {
+  flex: 1 1 auto;
+  background: #1c1c1c;
+}
+.header {
+  flex: 0 0 auto;
+}
+.main {
+  background: url("./assets/img/blackboard.jpg") center;
+  font-family: "Libre Baskerville";
+}
+.footer {
+  flex: 0 0 auto;
+  font-family: "Dancing Script";
+}
+.container {
+  max-width: 1920px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.header-row,
+.main-row,
+.footer-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-row {
+  margin: 100px 0;
+}
+
+.header-menu {
+  width: 80%;
+  text-align: center;
+}
+
+.header-menu__items {
+  height: 200px;
+  position: relative;
+}
+
+.menu-item {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid wheat;
+  border-radius: 7px;
+  width: 300px;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: wheat;
+  color: red;
+}
+
+.settings {
+  background: wheat;
+  z-index: 10;
+  color: red;
+}
+
+/* main */
+
+.main-game-fields {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-game__field {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  cursor: pointer;
+}
+.win-modify::after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 10px;
+  background: black;
+  transition: all 1s ease-in-out;
+  z-index: 5;
+}
+.win-column-modify::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 150px;
+  background: black;
+  transition: all 1s ease-in-out;
+  z-index: 5;
+}
+.win-diog-modify::after,
+.win-diog-r-modify::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 190px;
+  background: black;
+  transform: rotate(-45deg);
+  z-index: 5;
+}
+.win-diog-r-modify::after {
+  transform: rotate(45deg);
+}
+.right-modify {
+  border-right: none;
+}
+.bottom-modify {
+  border-bottom: none;
+}
+
+.main-game-controls {
+  padding: 20px 0;
+  margin: 50px 0;
+  text-align: center;
+}
+.main-client-zone {
+  width: 30%;
+}
+.main-client-row {
+  display: flex;
+  flex-direction: column;
+}
+.main-clien__info {
+  margin: 50px 0;
+}
+
+.main-other-game {
+  width: 604px;
+  height: 302px;
+}
+.main-other-game-easter {
+  width: 100%;
+  height: 302px;
+  background: url("./assets/img/Easter_eggs.jpg");
+  outline: 5px solid white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hidden-item {
+  position: relative;
+  width: 20%;
+  height: 151px;
+  border: 5px solid white;
+  background: black;
+  opacity: 1;
+  transition: all 3s ease-in-out;
+}
+.hidden {
+  padding-top: 20px;
+}
+
+.visible-item {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.main-client-table {
+  margin: 25px 0;
+  transition: 0.5s ease-in-out;
+}
+.main-client-item {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.info {
+  font-size: 19px;
+  line-height: 30px;
+  width: 50%;
+  text-align: center;
+}
+
+.info-title {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 22px;
+  line-height: 44px;
+  color: white;
+  margin-bottom: 15px;
+}
+.title {
+  font-size: 25px;
+  line-height: 44px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 25px;
+}
+.title::after,
+.title::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 10px;
+  left: 3px;
+  top: 19px;
+  background: white;
+  border-radius: 10px;
+}
+
+.title::before {
+  left: 69%;
+}
+.record-table {
+  border: 10px solid white;
+  border-top: none;
+  border-radius: 10px;
+}
+.record-item {
+  font-size: 19px;
+  line-height: 25px;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+.record-item:first-child {
+  padding-top: 40px;
+}
+.record-item:last-child {
+  padding-bottom: 30px;
+}
+
+.logo {
+  cursor: pointer;
+  width: 70px;
+  fill: white;
+  transition: 0.5s ease-in-out;
+}
+.logo:hover {
+  fill: coral;
+}
+.decor-item {
+  padding: 20px;
+  padding-left: 50px;
+}
+.decor-item:last-child {
+  padding-left: 150px;
+  fill: black;
+}
+.decor {
+  width: 100px;
+  fill: white;
+}
+.hot {
+  fill: black;
+}
+
+.cross {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+button {
+  position: relative;
+  width: 40%;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 40px;
+  margin-right: 25px;
+  border: 5px solid red;
+  border-radius: 7px;
+  background: red;
+  color: wheat;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.restart::before {
+  position: absolute;
+  content: "";
+  border-top: 5px solid rgba(255, 0, 0, 0.829);
+  border-left: 5px solid rgba(255, 0, 0, 0.829);
+  border-right: 5px solid rgba(255, 0, 0, 0.322);
+  border-bottom: 5px solid rgba(255, 0, 0, 0.322);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.restart:hover {
+  box-shadow: -15px 15px rgba(255, 0, 0, 0.322),
+    15px -15px rgba(255, 0, 0, 0.829);
+  color: yellow;
+}
+
+.restart:hover::before,
+.start:hover::before {
+  border: none;
+}
+.start {
+  background: coral;
+  border: 5px solid coral;
+}
+.start::before {
+  border-top: 5px solid rgba(255, 127, 80, 0.829);
+  border-top: 5px solid rgba(255, 127, 80, 0.829);
+  border-right: 5px solid rgba(255, 127, 80, 0.322);
+  border-right: 5px solid rgba(255, 127, 80, 0.322);
+}
+.start:hover {
+  box-shadow: 15px 15px rgba(255, 127, 80, 0.322),
+    -15px -15px rgba(255, 127, 80, 0.829);
+  color: yellow;
+}

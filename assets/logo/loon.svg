@@ -1,0 +1,15 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" viewBox="0 0 400 400" id="loon">
+    <desc>Created with Fabric.js 3.6.2</desc>
+    <defs></defs>
+    <g transform="matrix(0.39 0 0 0.39 200 175)" id="Layer_1">
+      <path transform=" translate(-256, -192)" d="M 272 0 h -32 C 142.781 0 64 78.797 64 176 c 0 68.398 39.009 127.682 96 156.812 V 352 c 0 17.672 14.312 32 32 32 h 128 c 17.688 0 32 -14.328 32 -32 v -19.195 c 56.981 -29.133 96 -88.412 96 -156.805 C 448 78.797 369.188 0 272 0 z M 288 286.857 V 320 h -64 v -33.143 c -54.268 -7.767 -96 -54.434 -96 -110.857 c 0 -61.859 50.155 -112 112 -112 h 32 c 61.844 0 112 50.141 112 112 C 384 232.425 342.267 279.092 288 286.857 z" stroke-linecap="round"></path>
+    </g>
+    <g transform="matrix(0.39 0 0 0.39 200 268.75)" id="Layer_1">
+      <path transform=" translate(-256, -432)" d="M 208 416 h 96 c 8.844 0 16 7.172 16 16 s -7.156 16 -16 16 h -96 c -8.845 0 -16 -7.172 -16 -16 S 199.156 416 208 416 z" stroke-linecap="round"></path>
+    </g>
+    <g transform="matrix(0.39 0 0 0.39 200 293.75)" id="Layer_1">
+      <path transform=" translate(-256, -496)" d="M 240 480 h 32 c 8.844 0 16 7.172 16 16 s -7.156 16 -16 16 h -32 c -8.845 0 -16 -7.172 -16 -16 S 231.156 480 240 480 z" stroke-linecap="round"></path>
+    </g>
+  </symbol>
+</svg>
